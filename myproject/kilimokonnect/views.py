@@ -6,7 +6,18 @@ def index(request):
     # return render(request,'kilimokonnect/frame.html')
 def about(request):
     return  render(request, 'kilimokonnect/about.html')
-def retailers(request):
-    return  render(request, 'kilimokonnect/retailersmain.html')
+def login(request):
+    return  render(request, 'kilimokonnect/login.html')
+def signup(request):
+    return  render(request, 'kilimokonnect/signup.html')
 def contact(request):
-    return  render(request, 'kilimokonnect/retailersorders.html')
+    return  render(request, 'kilimokonnect/contactus.html')
+def retailersdashboard(request):
+    return  render(request, 'kilimokonnect/retailersdash.html')
+def retailersavailable(request):
+    return  render(request, 'kilimokonnect/retailersavailableprodece.html')
+def bookstorage(request):
+    return  render(request, 'kilimokonnect/bookstorage.html')
+def retailersanalytics(request):
+    return  render(request, 'kilimokonnect/retailersanalytics.html')
+

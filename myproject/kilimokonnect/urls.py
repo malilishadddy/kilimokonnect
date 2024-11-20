@@ -5,6 +5,14 @@ urlpatterns = [
     path('',views.index),
     path('about/',views.about),
     path('contactus/',views.contact),
-    path('retailers/',views.retailers)
+    path('signup/',views.signup),
+    path('login/',views.login),
+    path('retailersdash/',views.retailersdashboard),
+    path('retailersavailableproduce/',views.retailersavailable),
+    path('retailersbookstorage/',views.bookstorage),
+    path('retailersanalytics/',views.retailersanalytics),
+
+
+    
 
 ]

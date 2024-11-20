@@ -1,27 +1,44 @@
 {%extends 'kilimokonnect/retailersmain.html'%}
-{%load tailwind_tags%}
 {% load static %}
-{% block title%}
-Financial Reports
-{% endblock%}
+{% load tailwind_tags %}
+
+{% block title%} Analytics {%endblock%}
+
 {% block content %}
-<h1>Analytics</h1>
-<hr>
-<div>
-    <h1>Top selling products</h1>
-    <ol>
-        <li>Avocados </li>
-        <li>Tomatoes</li>
-        <li>Carrots</li>
-        <li>Tangarine</li>
-    </ol>
+
+<div class="container mx-auto py-8 px-10">
+    <div class="flex justify-between items-center mb-8">
+        <div class="flex">
+            <img class="size-7" src="{%static 'kilimokonnect/nf2.png'%}" alt="">
+            <h1 class="text-3xl font-bold text-[#8b4512]">Analytics</h1>
+            <img class="size-7" src="{%static 'kilimokonnect/NF.png'%}" alt="">  
+        </div>
+        <button class=" hover:bg-gray-300 px-4 py-2 rounded-md">
+            <img src="{%static  'kilimokonnect/cart.png'%}" alt="" class="size-6">
+            <span class="text-[#074c3a] font-semibold text-lg">Cart</span>
+        </button>
+    </div>
+
+    <div class="m-5
+        ">
+        <hr>
+    </div>
+    <div class="grid grid-cols-2 gap-14">
+        <div class=" rounded-lg shadow-md p-4 bg-[#f1e9dc]">
+            <h2 class="text-lg font-bold text-[#3d2b1f] mb-2">Top Selling</h2>
+            <p class="text-3xl font-bold text-[#074c3a]">Top produce goes here</p>
+        </div>
+        <div class="bg-[#f1e9dc] rounded-lg shadow-md p-4">
+            <h2 class="text-lg font-bold text-[] mb-2">Total Utlization</h2>
+            <p class="text-3xl font-bold text-[#074c3a]">Graph goes here</p>
+        </div>
+    </div>
+    <div class="bg-[#f1e9dc] h-80 rounded-lg my-10">
+        <h1>Graph will go here</h1>
+    </div>
+
 </div>
-<div>
-    <h1>Total utilization</h1>
-    <h1>Graph supposed to be here</h1>
-</div>
-<div>
-    <h1>GRAPH SHOULD BE HERE</h1>
-</div>
+
+
 
 {% endblock %}
