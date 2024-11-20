@@ -20,4 +20,17 @@ def bookstorage(request):
     return  render(request, 'kilimokonnect/bookstorage.html')
 def retailersanalytics(request):
     return  render(request, 'kilimokonnect/retailersanalytics.html')
-
+def retailersnotification(request):
+    return  render(request, 'kilimokonnect/retailersnotifications.html')
+def ownersdash(request):
+    return  render(request, 'kilimokonnect/ownersdashboard.html')
+def storagerequest(request):
+    return  render(request, 'kilimokonnect/ownersstoragerequest.html')
+def ownerinventory(request):
+    return  render(request, 'kilimokonnect/ownersiventory.html')
+def ownersfinancials(request):
+    return  render(request, 'kilimokonnect/ownersfinancials.html')
+def ownernotification(request):
+    return  render(request, 'kilimokonnect/ownersnotification.html')
+def retailersorder(request):
+    return  render(request, 'kilimokonnect/retailersorders.html')
