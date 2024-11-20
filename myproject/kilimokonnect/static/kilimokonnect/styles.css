@@ -1,0 +1,8 @@
+.bg-custom {
+    @apply bg-cover bg-center;
+    background-image: url('/static/kilimoconnect/hero.jpeg');
+}
+.trial{
+    height: 50px;
+    background-color: red;  
+}

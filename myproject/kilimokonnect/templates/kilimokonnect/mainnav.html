@@ -1,0 +1,27 @@
+{% load static %}
+<nav class="px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between h-16">
+        <div class="flex md:space-x-16 sm:space-x-8">
+            <div class="shrink-0 flex items-center">
+                <img class="size-28" src="{% static 'kilimokonnect/logo.png'%}" alt="kilimokonnect logo">
+            </div>
+            <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                <a href="/"
+                    class="text-gray-900 underline inline-flex items-center px-1 pt-1 text-sm font-medium">Home</a>
+                <a href="/about"
+                    class="text-gray-500 hover:underline hover:text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium">About
+                    Us</a>
+                <a href="#"
+                    class="text-gray-500 hover:underline hover:text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium">Features</a>
+                <a href="#"
+                    class="text-gray-500 hover:underline hover:text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium">How
+                    it works</a>
+                <a href="#"
+                    class="text-gray-500 hover:underline hover:text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium">Testimonials</a>
+            </div>
+        </div>
+        <div class="flex items-center">
+            <a href="#" class="bg-sherwood-900 text-white px-4 py-2 rounded-md shadow">Log In</a>
+        </div>
+    </div>
+</nav>

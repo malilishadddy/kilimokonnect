@@ -1,0 +1,53 @@
+
+{%extends 'kilimokonnect/frame.html'%}
+{% load tailwind_tags %}
+{%load static%}
+
+{% block title%} About Page {%endblock%}
+
+{% block navbar %}
+{{ block.super }}
+{% endblock %}
+
+{% block content%}
+<div class="my-16 bg-rope-100 rounded-[34px] p-10 mb-12 text-sherwood-800 font-semibold ">
+    <div class="flex justify-center space-x-3">
+        <img class="size-7" src="{%static 'kilimokonnect/NF.png'%}" alt="">
+        <h1 class="text-3xl mb-10 text-sherwood-800 font-semibold  ">About us</h1>
+        <img class="size-7" src="{%static 'kilimokonnect/nf2.png'%}" alt="">
+    </div>
+    <div class="text-xl mb-10">
+        <p>At Kilimoconnect, we are committed to transforming the way</p>
+        <p>fresh produce retailers access cold storage solutions.We</p>
+        <p> understand the challenges faced by them in preserving the</p>
+        <p> quality of fruits & vegetables due to lack of proper storage facilities</p>
+    </div>
+    <div class="text-xl">
+        <p>Our Innovative marketspace platform connects retailers with trusted </p>
+        <p>cold storage owners,allowing them to extend the shelf life of their</p>
+        <p>produce ,reduce waste & mawimize profits</p>
+    </div>
+    <div class="flex place-content-end">
+        <img src="{%static 'kilimokonnect/picture.png'%}" alt="">
+    </div>
+</div>
+<div class=" h-40">
+
+</div>
+
+<div class="bg-rope-100 flex justify-center items-center py-10">
+    <div class="flex flex-col items-center space-y-2">
+        <p class="text-center">Sign up now to get on the wait-list for our website</p>
+    <button class="text-white  bg-green-800 py-2 px-3 rounded-lg">
+        Get Started
+    </button>
+    </div>
+</div>
+
+{% endblock %}
+
+
+{% block footer%}
+{{block.super}}
+
+{% endblock%}

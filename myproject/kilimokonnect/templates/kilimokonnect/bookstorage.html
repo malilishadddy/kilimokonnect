@@ -1,0 +1,88 @@
+{%extends 'kilimokonnect/retailersmain.html'%}
+{%load tailwind_tags%}
+{% load static %}
+{% block title%}
+Book Storage
+{% endblock%}
+{% block content %}
+<div class="container mx-auto py-8 px-10">
+    <div class="flex justify-between items-center mb-8">
+        <div class="flex">
+            <img class="size-7" src="{%static 'kilimokonnect/nf2.png'%}" alt="">
+            <h1 class="text-3xl font-bold text-[#8b4512]">Book Storage</h1>
+            <img class="size-7" src="{%static 'kilimokonnect/NF.png'%}" alt="">
+        </div>
+        <button class=" hover:bg-gray-300 px-4 py-2 rounded-md">
+            <img src="{%static  'kilimokonnect/cart.png'%}" alt="" class="size-6">
+            <span class="text-[#074c3a] font-semibold text-lg">Cart</span>
+        </button>
+    </div>
+
+    <div class="m-5
+        ">
+        <hr>
+    </div>
+
+    <h2 class="text-2xl font-bold text-[#074c3a] mb-4">Produce Information</h2>
+    <div class=" p-6 rounded-lg shadow-md bg-[#f1e9dc] ">
+
+        <div class="grid grid-cols-2 gap-x-20 gap-y-6  ">
+            <div>
+                <label for="produceName" class="block text-[#3d2b1f] font-bold mb-2">Produce name:</label>
+                <input type="text" id="produceName"
+                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    placeholder="Enter produce">
+            </div>
+            <div>
+                <label for="startDate" class="block text-[#3d2b1f] font-bold mb-2">Start date:</label>
+                <input type="date" id=""
+                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    placeholder="Enter start date">
+            </div>
+            <div>
+                <label for="quantity" class="block text-[#3d2b1f] font-bold mb-2">Quantity(kg):</label>
+                <input type="number" id="quantity"
+                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    placeholder="Enter quantity">
+            </div>
+            <div>
+                <label for="duration" class="block text-[#3d2b1f] font-bold mb-2">Duration(days):</label>
+                <input type="number" id="duration"
+                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline placeholder="
+                    Enter number of Days"">
+            </div>
+        </div>
+    </div>
+    <h2 class="text-2xl font-bold text-[#074c3a] mt-10">Available Storage Facilities</h2>
+    <div class="bg-[#f1e9dc] p-6 mt-6 rounded-lg shadow-md relative">
+        <div class="space-y-4 mb-20">
+            <div class="border p-4 rounded-lg">
+                <h3 class="font-bold">Facility A</h3>
+                <p>Capacity: 1000 kg</p>
+                <p>Location: Nairobi</p>
+                <p>Price: Ksh 200</p>
+            </div>
+            <div class="border p-4 rounded-lg">
+                <h3 class="font-bold">Facility B</h3>
+                <p>Capacity: 1000 kg</p>
+                <p>Location: Nairobi</p>
+                <p>Price: Ksh 200</p>
+            </div>
+            <div class="border p-4 rounded-lg">
+                <h3 class="font-bold">Facility C</h3>
+                <p>Capacity: 1000 kg</p>
+                <p>Location: Nairobi</p>
+                <p>Price: Ksh 200</p>
+            </div>
+        </div>
+        <div class="absolute bottom-0 right-0 p-4">
+            <button class="bg-[#044d3a] text-white font-bold py-2 px-4 rounded hover:underline">
+                Book now
+            </button>
+        </div>
+    </div>
+
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,221 @@
+{%extends 'kilimokonnect/frame.html'%}
+{% load tailwind_tags %}
+{%load static%}
+<!-- style="background-image: url('{% static "kilimokonnect/hero.jpeg" %}');" -->
+<!-- < ----image area ya hero-->
+{% block title%} Home {%endblock%}
+
+{% block navbar %}
+{{ block.super }}
+{% endblock %}
+
+
+{% block content %}
+<div
+    class="bg-custom mt-16 h-[467px]  py-8 px-4 bg-no-repeat bg-cover bg-center rounded-[34px] bg-[url('/static/kilimokonnect/hero.jpeg')]">
+    <!-- <div class="h-[360px] flex items-center p-4 bg-no-repeat" style="background-image: url('{% static "kilimokonnect/hero.jpeg"%}');"> -->
+    <section class="text-white font-semibold">
+        <div class=" text-3xl space-y-4">
+            <h1>Connecting fresh produce retailers</h1>
+            <p class="pl-2">Fresh solutions, lasting profit</p>
+        </div>
+        <p class="pl-2.5 mt-4 text-md ">
+            <span>
+                Revolutionizing cold-chain solutions
+            </span>
+            <br>
+            <span class="pl-3">
+                for fresh produce retailers</span>
+        </p>
+        <section class="flex items-center justify-center mt-16">
+            <div class="flex justify-center absolute">
+                <input type="email" placeholder="Your email address"
+                    class="p-3 rounded-xl border-2 border-white text-gray-800">
+                <button class="relative bg-sherwood-800 px-4 py-2 rounded-xl  -mr-8"><a class=" hover:underline" href="/contactus">Contact us</a></button>
+            </div>
+        </section>
+    </section>
+
+
+
+
+</div>
+<!-- adding the cardss -->
+<article class="-mt-14 max-w-6xl grid grid-cols-3 gap-8  mx-auto italic">
+    <div class=" max-w-64 font-bold bg-transparent/20 backdrop-blur-sm p-6 rounded-2xl">
+        <p class="text-3xl text-center text-rope-950"> 20 Tons</p>
+        <p class="text-rope-800 text-xl mt-2 text-nowrap">
+            Produce stored daily
+        </p>
+    </div>
+    <div class=" max-w-64 font-bold  bg-transparent/20 backdrop-blur-sm p-6 rounded-2xl">
+        <p class="text-3xl text-center text-rope-950"> 500+</p>
+        <p class="text-rope-800 text-xl mt-2 text-nowrap">Users connected</p>
+
+    </div>
+    <div class=" max-w-64 font-bold bg-transparent/20 backdrop-blur-sm p-6 rounded-2xl">
+        <p class="text-3xl text-center text-rope-950">30%</p>
+        <p class="text-rope-800 text-xl mt-2 text-nowrap">Increase in revenue</p>
+    </div>
+</article>
+
+
+
+
+<div class="bg-rope-50 mt-16 flex space-x-2 pt-10 rounded-[34px] ">
+    <div class="w-52 m-10 -mr-12">
+        <img class="size-7" src="{% static 'kilimokonnect/nf2.png'%}" alt="">
+        <p class="text-sherwood-800 font-semibold text-3xl ml-6">About us</p>
+        <img class="size-7 float-end" src="{% static 'kilimokonnect/NF.png'%}" alt="">
+    </div>
+    <div class=" flex-none ">
+        <img class="w-[800px] object-cover" src="{%static  'kilimokonnect/pictuu.png'%}" alt="">
+    </div>
+    <div class="text-2xl mt-16 font-semibold text-rope-900">
+        <p class=""><span class="font-bold">A</span>t KilimoConnect, we are committed to transforming</p>
+        <p>the way fresh produce retailers access</p>
+        <p>cold storage solutions.We understand the challenges</p>
+        <p>faced by them in preserving the quality of ...</p>
+        <div class="float-end mt-40 mr-12">
+            <button
+                class="relative bg-sherwood-900 px-4 py-2 rounded-xl underline w-40 h-16 text-white font-normal">Learn
+                more</button>
+        </div>
+
+    </div>
+</div>
+<div class=" bg-white mt-14 ">
+    <div class="flex justify-center space-x-3">
+        <img class="size-7" src="{%static 'kilimokonnect/NF.png'%}" alt="">
+        <h1 class="text-3xl text-sherwood-800 font-semibold  ">Our Features</h1>
+        <img class="size-7" src="{%static 'kilimokonnect/nf2.png'%}" alt="">
+    </div>
+
+    <div class="grid grid-cols-3 gap-8 space-x-3 m-10 p-4 font-semibold">
+        <div class="bg-[#f3f3f3] rounded-xl p-4 ">
+            <p class="text-rope-800 font-bold">Inventory Management</p>
+            <p>Track and manage storage</p>
+            <p>Inventory in real time</p>
+        </div>
+        <div class="bg-[#f3f3f3] rounded-xl p-4">
+            <p class="text-rope-800 font-bold mb-3">Marketing access</p>
+            <p>Connect with a wide</p>
+            <p>network of retailers</p>
+        </div>
+        <div class="bg-[#f3f3f3] rounded-xl p-4">
+            <p class="text-rope-800 font-bold mb-3">Logistics coordination</p>
+            <p>Streamline transportation</p>
+            <p>and delivery process</p>
+        </div>
+    </div>
+    <div class="grid grid-cols-3 gap-8 space-x-3 m-10 p-4 font-semibold">
+        <div class="bg-[#f3f3f3] rounded-xl  p-4">
+            <p class="text-rope-800 font-bold mb-3">Scheduling system</p>
+            <p>Efficiently plan cold storage</p>
+            <p>space and duration</p>
+        </div>
+        <div class="bg-[#f3f3f3] rounded-xl p-4">
+            <p class="text-rope-800 font-bold mb-3">Temperature monitoring</p>
+            <p class="">Ensure optimal storage conditions</p>
+            <p>for fresh produce</p>
+        </div>
+        <div class="bg-[#f3f3f3] rounded-xl p-4">
+            <p class="text-rope-800 font-bold mb-3">Order managemnt</p>
+            <p>Process and fulfill orders from</p>
+            <p>retailers seamslessly</p>
+        </div>
+    </div>
+</div>
+<div class="bg-rope-100  p-10">
+    <div class="flex justify-center space-x-3">
+        <img class="size-7" src="{%static 'kilimokonnect/NF.png'%}" alt="">
+        <h1 class="text-3xl mb-10 text-sherwood-800 font-semibold  ">How it works</h1>
+        <img class="size-7" src="{%static 'kilimokonnect/nf2.png'%}" alt="">
+    </div>
+    <div class="flex place-content-center h-48 mb-10">
+        <div class="bg-[#f8f3ec] w-96 p-6 rounded-3xl">
+            <p class="text-rope-900 font-bold text-2xl mb-2">1. Collection points</p>
+            <p class="text-sherwood-700 ">Fresh produce retailers bring</p>
+            <p class="text-sherwood-400 ">produce to designated</p>
+            <p class="text-sherwood-400 ">collection points</p>
+        </div>
+        <div class=" -ml-28 my-4">
+            <img class="h-40 w-60 rounded-full  " src="{%static 'kilimokonnect/collections.jpg'%}" alt="">
+        </div>
+    </div>
+
+    <div class=" flex place-content-start h-48 mb-10">
+        <div class="my-4 z-10">
+            <img class="h-40 w-60 rounded-full" src="{%static 'kilimokonnect/coldstorage.jpeg'%}" alt="">
+        </div>
+        <div class="bg-[#f8f3ec] w-96 p-6 rounded-3xl -ml-28 pl-32">
+            <p class="text-rope-800 font-bold text-2xl mb-2">2.Cold storage</p>
+            <p class="text-sherwood-700">Enables retailer to store</p>
+            <p class="text-sherwood-700">perishable products</p>
+            <p class="text-sherwood-700">affordably</p>
+        </div>
+    </div>
+    <div class=" flex place-content-center h-48 mb-5">
+        <div class="bg-[#f8f3ec] w-96 p-6 rounded-3xl">
+            <p class="text-rope-900 font-bold text-2xl mb-2">Logistics platform</p>
+            <p class="text-sherwood-700">The platform handles </p>
+            <p class="text-sherwood-700">logistics and coordinates</p>
+            <p class="text-sherwood-700">storage</p>
+        </div>
+        <div class="-ml-28 my-4">
+            <img class="h-40 w-60 rounded-full" src="{%static 'kilimokonnect/logistics.jpeg'%}" alt="">
+        </div>
+    </div>
+</div>
+<div>
+    <div class="flex justify-center space-x-3 mt-14 mb-2">
+        <img class="size-7 ml-10" src="{%static 'kilimokonnect/NF.png'%}" alt="">
+        <h1 class="text-3xl text-sherwood-800 font-semibold  ">Testimonials</h1>
+        <img class="size-7" src="{%static 'kilimokonnect/nf2.png'%}" alt="">
+    </div>
+    <p class="text-center text-rope-900 font-bold text-2xl">Dont believe us?Here's what our users say about us</p>
+    <img class="size-16 m-10" src="{% static 'kilimokonnect/QuoteLeft.png'%}" alt="">
+
+    <div class=" my-10 flex space-x-96 place-content-center ">
+        <div class="bg-gray-400 text-sherwood-800 h-60 rounded-[300px] text-lg ">
+            <div class="mt-10">
+                <p>"KilimoConnect has helped me</p>
+                <p>optimize my storage facility</p>
+                <p>and connect with more retailers"</p>
+                <p class="mt-4">~Aisha Salim,Storage owner</p>
+            </div>
+        </div>
+        <div class="bg-gray-400 text-sherwood-800 h-60 rounded-[300px] text-lg  ">
+            <div class="mt-10">
+                <p>
+                    This platform ensure I get high
+                </p>
+                <p>quality produce consistently</p>
+                <p>improving my business</p>
+                <p>operations.</p>
+                <p>~ John Kamau,Produce retailer</p>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="flex place-content-end mb-4">
+        <img class="size-16" src="{%static 'kilimokonnect/GetQuote.png'%}" alt="">
+    </div>
+
+    <div class="bg-rope-100 flex justify-center items-center py-10">
+        <div class="flex flex-col items-center space-y-2">
+            <p class="text-center">Sign up now to get on the wait-list for our website</p>
+        <button class="text-white  bg-green-800 py-2 px-3 rounded-lg">
+            Get Started
+        </button>
+        </div>
+    </div>
+
+
+    {% endblock %}
+
+    {% block footer%}
+    {{block.super}}
+
+    {% endblock%}

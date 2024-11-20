@@ -1,0 +1,43 @@
+{%extends 'kilimokonnect/frame.html'%}
+{%load tailwind_tags%}
+{% load static %}
+
+{% block title%}
+Login
+{% endblock%}
+{% block navbar%}
+
+{% endblock %}
+{% block content%}
+<div class="m-10 ">
+    <h1 >Welcome back</h1>
+    <div class="flex border-2 w-5/6 border-cyan-800 my-5" >
+        <form action="" class="flex flex-1 flex-col">
+    
+            <div class="flex space-x-20 mb-5">
+                <label for="" class="font-semibold">Username</label>
+                <input type="text" class="w-8/12 rounded-md bg-[#d7d2ce]">
+            </div>
+            <div class="flex space-x-20 mb-5">
+                <label for="" class="font-semibold">Email</label>
+                <input type="text" class="w-8/12 rounded-md bg-[#d7d2ce]  ">
+            </div>
+            <div class="flex space-x-20 mb-5">
+                <label for="">Password</label>
+                <input type="text" class="w-8/12 rounded-md bg-[#d7d2ce]  ">
+            </div>
+            <button class="h-7 w-24 bg-[#494f05] text-white">Login </button>
+    
+            
+        </form>
+
+    </div>
+   
+</div>
+    
+
+    {% endblock%}
+
+    {% block footer%}
+
+    {% endblock %}
