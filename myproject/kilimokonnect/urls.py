@@ -11,6 +11,15 @@ urlpatterns = [
     path('retailersavailableproduce/',views.retailersavailable),
     path('retailersbookstorage/',views.bookstorage),
     path('retailersanalytics/',views.retailersanalytics),
+    path('retailersnotification/',views.retailersnotification),
+    path('ownersdashboard/',views.ownersdash),
+    path('ownersstoragerequest/',views.storagerequest),
+    path('ownersinventory/',views.ownerinventory),
+    path('ownersfinancials/',views.ownersfinancials),
+    path('ownersnotifications/',views.ownernotification),
+    path('retailersorders/',views.retailersorder),
+
+
 
 
     

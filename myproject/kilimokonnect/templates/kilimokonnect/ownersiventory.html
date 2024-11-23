@@ -1,0 +1,68 @@
+{%extends 'kilimokonnect/ownermain.html'%}
+{% load static %}
+{% load tailwind_tags %}
+
+{% block title%} Inventory {%endblock%}
+
+{% block content %}
+<div class="container mx-auto py-8 px-10">
+    
+    <div class="flex justify-between items-center mb-8">
+        <div class="flex">
+            <img class="size-7" src="{%static 'kilimokonnect/nf2.png'%}" alt="">
+            <h1 class="text-3xl font-bold text-[#8b4512]">Inventory</h1>
+            <img class="size-7" src="{%static 'kilimokonnect/NF.png'%}" alt="">  
+        </div>
+    </div>
+
+    <div class="m-5
+        ">
+        <hr>
+    </div>
+    <div class="mb-6 px-4 ">
+        <div class="relative ">
+            <input type="text" placeholder="Search produce "
+                class="w-full rounded-lg  border-[#f1e9dc]  bg-[#f1e9dc] p-3 pl-10  focus:outline-none focus:ring-0 focus:border -[#f1e9dc]" />
+            <svg xmlns="http://www.w3.org/2000/svg" class="absolute left-3 top-3.5 h-6 w-6 text-gray-400" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+        </div>
+    </div>
+    <div class="container mx-auto p-4">
+        
+        <div class="bg-[#f1e9dc] rounded-lg shadow-md p-4 mb-4 relative">
+            <h2 class="text-lg font-bold text-[#3c2c1f] mb-2">Cucumber</h2>
+            <p class="text-[#007d02] mb-4">Quantity :450kg</p>
+            <p class="text-[#007d02] mb-4">Quantity :450kg</p>
+            <p class="text-[#007d02] mb-4">Quantity :450kg</p>
+            <div class="absolute bottom-4 right-4">
+                <a href="#" class="bg-[#054d3a] hover:underline text-white font-bold py-2 px-4 rounded-lg focus:outline-none focus:shadow-outline">Update status</a>
+            </div>
+        </div>
+        <div class="bg-[#f1e9dc] rounded-lg shadow-md p-4 mb-4 relative">
+            <h2 class="text-lg font-bold text-[#3c2c1f] mb-2">Cucumber</h2>
+            <p class="text-[#007d02] mb-4">Quantity :450kg</p>
+            <p class="text-[#007d02] mb-4">Quantity :450kg</p>
+            <p class="text-[#007d02] mb-4">Quantity :450kg</p>
+            <div class="absolute bottom-4 right-4">
+                <a href="#" class="bg-[#054d3a] hover:underline text-white font-bold py-2 px-4 rounded-lg focus:outline-none focus:shadow-outline">Update status</a>
+            </div>
+        </div>
+        <div class="bg-[#f1e9dc] rounded-lg shadow-md p-4 mb-4 relative">
+            <h2 class="text-lg font-bold text-[#3c2c1f] mb-2">Cucumber</h2>
+            <p class="text-[#007d02] mb-4">Quantity :450kg</p>
+            <p class="text-[#007d02] mb-4">Quantity :450kg</p>
+            <p class="text-[#007d02] mb-4">Quantity :450kg</p>
+            <div class="absolute bottom-4 right-4">
+                <a href="#" class="bg-[#054d3a] hover:underline text-white font-bold py-2 px-4 rounded-lg focus:outline-none focus:shadow-outline">Update status</a>
+            </div>
+        </div>
+        
+
+    </div>
+
+</div>
+
+{% endblock %}
