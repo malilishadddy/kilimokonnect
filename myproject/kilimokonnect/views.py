@@ -1,5 +1,19 @@
-from django.shortcuts import render
-from django.http import HttpResponse
+from django.shortcuts import render, redirect
+from .forms import User
+from django.http import HttpResponse 
+
+def signup(request):
+    if request.method == 'POST':
+        form = User(request.POST)
+        if form.is_valid():
+            form.save()  # Save the new user
+            return redirect('success_page')  # Redirect to a success page or login page
+    else:
+        form = User()
+    
+    return render(request, 'kilimokonnect/signup.html', {'form': form})
+
+
 # Create your views here.
 def index(request):
     return render(request,'kilimokonnect/index.html')
@@ -8,8 +22,8 @@ def about(request):
     return  render(request, 'kilimokonnect/about.html')
 def login(request):
     return  render(request, 'kilimokonnect/login.html')
-def signup(request):
-    return  render(request, 'kilimokonnect/signup.html')
+#def signup(request):
+ #   return  render(request, 'kilimokonnect/signup.html')
 def contact(request):
     return  render(request, 'kilimokonnect/contactus.html')
 def retailersdashboard(request):

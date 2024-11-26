@@ -1,5 +1,7 @@
+from django.contrib.auth import views as auth_views 
+from . import views
 from django.urls import path
-from . import  views
+
 
 urlpatterns = [
     path('',views.index),
@@ -18,10 +20,4 @@ urlpatterns = [
     path('ownersfinancials/',views.ownersfinancials),
     path('ownersnotifications/',views.ownernotification),
     path('retailersorders/',views.retailersorder),
-
-
-
-
-    
-
 ]

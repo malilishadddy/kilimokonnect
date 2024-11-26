@@ -1,57 +1,56 @@
-{% extends 'kilimokonnect/frame.html'%}
-{% load tailwind_tags%}
-{% load static%}
-{% block title%}
-sign Up
+{% extends 'kilimokonnect/frame.html' %}
+{% load tailwind_tags %}
+{% load static %}
+{% block title %}
+Sign Up
 {% endblock %}
 
 {% block navbar %}
-
 {% endblock %}
 
 {% block content %}
 <div class="m-10 p-10">
-    <h1 class="">Welcome</h1> 
+    <h1>Welcome</h1> 
     <p>Please enter your details below</p>
     <div class="flex border-2 w-5/6 border-cyan-800 my-5">
-        <form class="flex flex-1 flex-col" action="" >
-        <div class="flex space-x-20 my-5">
-            <label for="" class="font-semibold">Select user</label>
-        <select name="" id="" class="w-8/12 rounded-md bg-[#d7d2ce]">
-            <option value="">General</option>
-            <option value="">Admin</option>
-        </select>
-        </div>
-        <div class="flex space-x-20 mb-5">
-            <label for="" class="font-semibold">Username</label>
-            <input type="text" class="w-8/12 rounded-md bg-[#d7d2ce]">
-        </div>
-        <div class="flex space-x-20 mb-5">
-            <label for="" class="font-semibold">Email</label>
-            <input type="text" class="w-8/12 rounded-md bg-[#d7d2ce]  ">
-        </div>
-        <div class="flex space-x-20 mb-5">
-            <label for="">Location</label>
-        <input type="text" class="w-8/12 rounded-md bg-[#d7d2ce]  ">
-        </div>
-        <div class="flex space-x-20 mb-5">
-            <label for="">Password</label>
-            <input type="text" class="w-8/12 rounded-md bg-[#d7d2ce]  ">
-         
-        </div>
-        <button class="h-7 w-24 bg-[#494f05] text-white">Sign Up</button>
-
-        
-       </form>
+        <form class="flex flex-1 flex-col" action="{% url 'your_signup_view' %}" method="POST">
+            {% csrf_token %}
+            <div class="flex space-x-20 my-5">
+                <label for="user_type" class="font-semibold">Select user</label>
+                {{ form.user_type }}
+            </div>
+            <div class="flex space-x-20 mb-5">
+                <label for="first_name" class="font-semibold">First Name</label>
+                {{ form.first_name }}
+            </div>
+            <div class="flex space-x-20 mb-5">
+                <label for="last_name" class="font-semibold">Last Name</label>
+                {{ form.last_name }}
+            </div>
+            <div class="flex space-x-20 mb-5">
+                <label for="email" class="font-semibold">Email</label>
+                {{ form.email }}
+            </div>
+            <div class="flex space-x-20 mb-5">
+                <label for="location">Location</label>
+                {{ form.location }}
+            </div>
+            <div class="flex space-x-20 mb-5">
+                <label for="password1">Password</label>
+                {{ form.password1 }}
+            </div>
+            <div class="flex space-x-20 mb-5">
+                <label for="password2">Confirm Password</label>
+                {{ form.password2 }}
+            </div>
+            <button type="submit" class="h-7 w-24 bg-[#494f05] text-white">Sign Up</button>
+        </form>
     </div>
     
-    <p>Already have an account?<span class=" text-[#494f05]">Log in</span></p>
+    <p>Already have an account? <a href="{% url 'login_view' %}" class="text-[#494f05]">Log in</a></p>
 
 </div>
-
-  
 {% endblock %}
 
 {% block footer %}
-
 {% endblock %}
